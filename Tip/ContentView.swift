@@ -30,7 +30,7 @@ struct ContentView: View {
                 
                 Section {
                     NavigationLink {
-                        Text("Detail")
+                        informationDetail()
                     } label: {
                         Image(systemName: "hand.draw")
                             .foregroundStyle(.linearGradient(colors: [.blue, .teal], startPoint: .leading, endPoint: .trailing))
@@ -76,7 +76,7 @@ struct ContentView: View {
                         Text("Detail")
                     } label: {
                         Image(systemName: "photo.on.rectangle.angled")
-                            .foregroundStyle(.linearGradient(colors: [.pink, .purple], startPoint: .leading, endPoint: .trailing))
+                            .foregroundStyle(.linearGradient(colors: [.pink, .white], startPoint: .leading, endPoint: .trailing))
                         Text("사진")
                     }
                     NavigationLink {

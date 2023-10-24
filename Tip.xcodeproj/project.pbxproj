@@ -14,6 +14,7 @@
 		5A1261E52ADE48A000BBF23A /* TipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261E42ADE48A000BBF23A /* TipTests.swift */; };
 		5A1261EF2ADE48A000BBF23A /* TipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261EE2ADE48A000BBF23A /* TipUITests.swift */; };
 		5A1261F12ADE48A000BBF23A /* TipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261F02ADE48A000BBF23A /* TipUITestsLaunchTests.swift */; };
+		5A1262022AE7C16E00BBF23A /* InformationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5A1261EA2ADE48A000BBF23A /* TipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1261EE2ADE48A000BBF23A /* TipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipUITests.swift; sourceTree = "<group>"; };
 		5A1261F02ADE48A000BBF23A /* TipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5A1261D32ADE489C00BBF23A /* TipApp.swift */,
 				5A1261D52ADE489C00BBF23A /* ContentView.swift */,
+				5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */,
 				5A1261D72ADE48A000BBF23A /* Assets.xcassets */,
 				5A1261D92ADE48A000BBF23A /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				5A1261D62ADE489C00BBF23A /* ContentView.swift in Sources */,
 				5A1261D42ADE489C00BBF23A /* TipApp.swift in Sources */,
+				5A1262022AE7C16E00BBF23A /* InformationDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
