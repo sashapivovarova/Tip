@@ -14,8 +14,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                TextField("검색", text: $search)
-                
                 Section {
                     ZStack{
                         Image("tip")
@@ -34,49 +32,69 @@ struct ContentView: View {
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("iPhone 탐색하기", systemImage: "bolt")
+                        Image(systemName: "hand.draw")
+                            .foregroundStyle(.linearGradient(colors: [.blue, .teal], startPoint: .leading, endPoint: .trailing))
+                        Text("iPhone 탐색하기")
                     }
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("사용자 정보 보호하기", systemImage: "key")
+                        Image(systemName: "lock.shield")
+                            .foregroundStyle(.linearGradient(colors: [.green, .mint], startPoint: .leading, endPoint: .trailing))
+                        Text("사용자 정보 보호하기")
                     }
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("대비하기", systemImage: "circle")
+                        Image(systemName: "heart.text.square")
+                            .foregroundStyle(.linearGradient(colors: [.yellow, .white], startPoint: .leading, endPoint: .trailing))
+                        Text("대비하기")
+                        
                     }
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("필수 항목 설정하기", systemImage: "star")
+                        Image(systemName: "star")
+                            .foregroundStyle(.linearGradient(colors: [.orange, .yellow], startPoint: .leading, endPoint: .trailing))
+                        Text("필수 항목 설정하기")
                     }
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("iPhone 개인 맞춤화하기", systemImage: "heart")
+                        Image(systemName: "heart")
+                            .foregroundStyle(.linearGradient(colors: [.purple, .pink], startPoint: .leading, endPoint: .trailing))
+                        Text("iPhone 개인 맞춤화하기")
                     }
                 } header: {
                     Text("시작하기")
+                        .font(.system(size: 20, weight: .medium))
+                        .foregroundColor(.white)
                 }
                 
                 Section {
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("사진", systemImage: "photo")
+                        Image(systemName: "photo.on.rectangle.angled")
+                            .foregroundStyle(.linearGradient(colors: [.pink, .purple], startPoint: .leading, endPoint: .trailing))
+                        Text("사진")
                     }
                     NavigationLink {
                         Text("Detail")
                     } label: {
-                        Label("카메라", systemImage: "camera")
+                        Image(systemName: "camera")
+                            .foregroundStyle(.linearGradient(colors: [.yellow, .white], startPoint: .leading, endPoint: .trailing))
+                        Text("카메라")
                     }
                 } header: {
                     Text("사진 및 카메라")
+                        .font(.system(size: 20, weight: .medium))
+                        .foregroundColor(.white)
                 }
-
+                
             }
             .navigationTitle("모음")
+            .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "검색")
         }
     }
 }
