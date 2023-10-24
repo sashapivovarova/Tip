@@ -22,7 +22,7 @@ struct ContentView: View {
                             .frame(width: 400, height: 200)
                         Text("새로운 기능")
                             .font(.system(size: 25, weight: .bold))
-                            .offset(x:-100, y:-90)
+                            .offset(x:-100, y:-80)
                         Text("17")
                             .font(.system(size: 150, weight: .light))
                     }
@@ -91,7 +91,6 @@ struct ContentView: View {
                         .font(.system(size: 20, weight: .medium))
                         .foregroundColor(.white)
                 }
-                
             }
             .navigationTitle("모음")
             .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "검색")
