@@ -16,6 +16,7 @@
 		5A1261F12ADE48A000BBF23A /* TipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261F02ADE48A000BBF23A /* TipUITestsLaunchTests.swift */; };
 		5A1262022AE7C16E00BBF23A /* InformationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */; };
 		5A1262042AE8FD0D00BBF23A /* InformationExploreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262032AE8FD0D00BBF23A /* InformationExploreDetail.swift */; };
+		5A1262062AE909F500BBF23A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262052AE909F500BBF23A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5A1261F02ADE48A000BBF23A /* TipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetail.swift; sourceTree = "<group>"; };
 		5A1262032AE8FD0D00BBF23A /* InformationExploreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationExploreDetail.swift; sourceTree = "<group>"; };
+		5A1262052AE909F500BBF23A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				5A1261D52ADE489C00BBF23A /* ContentView.swift */,
 				5A1261FF2AE7BDBD00BBF23A /* InformationDetail.swift */,
 				5A1262032AE8FD0D00BBF23A /* InformationExploreDetail.swift */,
+				5A1262052AE909F500BBF23A /* Model.swift */,
 				5A1261D72ADE48A000BBF23A /* Assets.xcassets */,
 				5A1261D92ADE48A000BBF23A /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1262062AE909F500BBF23A /* Model.swift in Sources */,
 				5A1261D62ADE489C00BBF23A /* ContentView.swift in Sources */,
 				5A1262042AE8FD0D00BBF23A /* InformationExploreDetail.swift in Sources */,
 				5A1261D42ADE489C00BBF23A /* TipApp.swift in Sources */,

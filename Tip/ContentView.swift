@@ -10,6 +10,16 @@ import SwiftUI
 struct ContentView: View {
     
     @State var search: String = ""
+    var startList: [Collection] = [
+        Collection(symbolName: "hand.draw", symbolColor: [.blue, .teal], symbolTitle: "iPhone 탐색하기"),
+        Collection(symbolName: "lock.shield", symbolColor: [.green, .mint], symbolTitle: "사용자 정보 보호하기"),
+        Collection(symbolName: "heart.text.square", symbolColor: [.yellow, .white], symbolTitle: "대비하기"),
+        Collection(symbolName: "star", symbolColor: [.orange, .yellow], symbolTitle: "필수 항목 설정하기"),
+        Collection(symbolName: "heart", symbolColor: [.purple, .pink], symbolTitle: "iPhone 개인 맞춤화하기")]
+    
+    var startList2: [Collection] = [
+        Collection(symbolName: "photo.on.rectangle.angled", symbolColor: [.pink, .white], symbolTitle: "사진"),
+        Collection(symbolName: "camera", symbolColor: [.yellow, .white], symbolTitle: "카메라")]
     
     var body: some View {
         NavigationStack {
@@ -29,41 +39,14 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    NavigationLink {
-                        informationDetail()
-                    } label: {
-                        Image(systemName: "hand.draw")
-                            .foregroundStyle(.linearGradient(colors: [.blue, .teal], startPoint: .leading, endPoint: .trailing))
-                        Text("iPhone 탐색하기")
-                    }
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "lock.shield")
-                            .foregroundStyle(.linearGradient(colors: [.green, .mint], startPoint: .leading, endPoint: .trailing))
-                        Text("사용자 정보 보호하기")
-                    }
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "heart.text.square")
-                            .foregroundStyle(.linearGradient(colors: [.yellow, .white], startPoint: .leading, endPoint: .trailing))
-                        Text("대비하기")
-                        
-                    }
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "star")
-                            .foregroundStyle(.linearGradient(colors: [.orange, .yellow], startPoint: .leading, endPoint: .trailing))
-                        Text("필수 항목 설정하기")
-                    }
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "heart")
-                            .foregroundStyle(.linearGradient(colors: [.purple, .pink], startPoint: .leading, endPoint: .trailing))
-                        Text("iPhone 개인 맞춤화하기")
+                    ForEach(startList) { item in
+                        NavigationLink {
+                            informationDetail()
+                        } label: {
+                            Image(systemName: item.symbolName)
+                                .foregroundStyle(.linearGradient(colors: item.symbolColor, startPoint: .leading, endPoint: .trailing))
+                            Text(item.symbolTitle)
+                        }
                     }
                 } header: {
                     Text("시작하기")
@@ -72,24 +55,21 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "photo.on.rectangle.angled")
-                            .foregroundStyle(.linearGradient(colors: [.pink, .white], startPoint: .leading, endPoint: .trailing))
-                        Text("사진")
-                    }
-                    NavigationLink {
-                        Text("Detail")
-                    } label: {
-                        Image(systemName: "camera")
-                            .foregroundStyle(.linearGradient(colors: [.yellow, .white], startPoint: .leading, endPoint: .trailing))
-                        Text("카메라")
+                    ForEach(startList2) { item in
+                        NavigationLink {
+                            informationDetail()
+                        } label: {
+                            Image(systemName: item.symbolName)
+                                .foregroundStyle(.linearGradient(colors: item.symbolColor, startPoint: .leading, endPoint: .trailing))
+                            Text(item.symbolTitle)
+                        }
                     }
                 } header: {
-                    Text("사진 및 카메라")
+                    Text("시작하기")
                         .font(.system(size: 20, weight: .medium))
                         .foregroundColor(.white)
+                    
+                    
                 }
             }
             .navigationTitle("모음")
