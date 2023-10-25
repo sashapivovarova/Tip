@@ -23,6 +23,7 @@ struct informationDetail: View {
             }
             .padding(.leading, 25)
             .frame(height: 230)
+            .listRowSeparator(.hidden)
             .listRowBackground(
                 LinearGradient(
                     colors: [.blue, .gray], startPoint: .leading, endPoint: .trailing
@@ -39,7 +40,7 @@ struct informationDetail: View {
             )
             
             NavigationLink {
-                Text("Detail")
+                InformationExploreDetail()
             } label: {
                 HStack{
                     Image("detail")
