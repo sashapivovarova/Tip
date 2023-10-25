@@ -16,7 +16,6 @@ struct ContentView: View {
         Collection(symbolName: "heart.text.square", symbolColor: [.yellow, .white], symbolTitle: "대비하기"),
         Collection(symbolName: "star", symbolColor: [.orange, .yellow], symbolTitle: "필수 항목 설정하기"),
         Collection(symbolName: "heart", symbolColor: [.purple, .pink], symbolTitle: "iPhone 개인 맞춤화하기")]
-    
     var startList2: [Collection] = [
         Collection(symbolName: "photo.on.rectangle.angled", symbolColor: [.pink, .white], symbolTitle: "사진"),
         Collection(symbolName: "camera", symbolColor: [.yellow, .white], symbolTitle: "카메라")]
@@ -65,11 +64,9 @@ struct ContentView: View {
                         }
                     }
                 } header: {
-                    Text("시작하기")
+                    Text("사진 및 카메라")
                         .font(.system(size: 20, weight: .medium))
                         .foregroundColor(.white)
-                    
-                    
                 }
             }
             .navigationTitle("모음")
